@@ -1,0 +1,28 @@
+/* SkillsDisplay.css */
+.department-section {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #dee2e6; /* Optional: Add a bottom border */
+  }
+  
+  .department-title {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #007bff; /* Bootstrap primary color */
+  }
+  
+  .skill-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .user-skill-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .badge {
+    margin-left: 0.5rem;
+  }
+  

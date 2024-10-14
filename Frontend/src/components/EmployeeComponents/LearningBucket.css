@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+   
+  }
+  
+  .learning-bucket-container {
+    height: 100vh; 
+    width: 100vw; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: #f8f9fa; 
+  }
+  
+  .course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    gap: 20px; 
+    width: 100%; 
+  }
+  
+  .learning-course-card {
+    transition: transform 0.2s ease; 
+  }
+  
+  .learning-course-card:hover {
+    transform: scale(1.05); 
+  }
+  

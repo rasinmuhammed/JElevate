@@ -1,0 +1,29 @@
+/* Leaderboard.css */
+.role-tag {
+    background-color: #007bff;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 12px;
+    margin: 2px;
+    display: inline-block;
+    font-size: 0.9rem;
+  }
+  
+  h2 {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+  }
+  
+  .table-hover tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .table-dark th {
+    background-color: #343a40;
+    color: white;
+  }
+  

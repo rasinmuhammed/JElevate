@@ -1,0 +1,368 @@
+/* src/styles.css */
+
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Login Page Styles */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  background: linear-gradient(to right, #350ca3,#6d259f, #f05e95);
+}
+
+.login-form {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 40px;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.login-form .logo {
+  width: 150px; 
+  margin-bottom: 20px;
+}
+
+.login-form .tagline {
+  font-size: 16px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #1a2a6c;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: #1a0000;
+}
+
+.login-form .error {
+  color: #ff4d4d;
+  margin-bottom: 10px;
+}
+
+.logo {
+  position: absolute; 
+  top: 25%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  width: 150px; 
+  opacity: 1; 
+  mix-blend-mode: lighten; 
+  z-index: 0; 
+}
+
+.tagline {
+  margin-top: 20px; 
+  font-size: 1.2rem; 
+  color: #ffffff; 
+  text-align: center; 
+}
+
+/* Admin Dashboard Styles */
+.admin-dashboard {
+  display: flex;
+  height: 100vh;
+  background-color: white; 
+}
+
+.sidebar {
+  width: 250px;
+  transition: width 0.3s;
+  background-color: #25195f; 
+  padding: 20px;
+  position: fixed;
+}
+
+.admin-dashboard .sidebar.collapsed {
+  width: 60px;
+}
+
+.admin-dashboard .sidebar .nav-link {
+  color: white;
+}
+
+.admin-dashboard .sidebar button {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.admin-dashboard .navbar {
+  background-color: #25195f; 
+}
+
+.admin-dashboard .navbar .navbar-brand {
+  color: white; 
+}
+
+.admin-dashboard .navbar .btn {
+  border-color: white;
+}
+
+/* Manage Departments Styles */
+.manage-departments {
+  margin-top: 20px;
+}
+
+.manage-departments h4 {
+  margin-bottom: 20px;
+}
+
+.dashboard-logo {
+  position: absolute; 
+  top: 10px;
+  width:100px;
+  opacity: 1; 
+  mix-blend-mode: lighten; 
+  z-index: 0; 
+}
+
+/* Employee Progress Style*/
+.table-scroll {
+  max-height: 400px;
+  overflow-y: auto; 
+  margin-bottom: 20px; 
+}
+
+
+/* Page layout and general styling */
+.add-course-page {
+  height: 70vh; 
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #f8f9fa; 
+}
+
+h4 {
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Filter controls styling */
+.filter-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.filter-controls .form-control {
+  max-width: 200px;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Course list styling */
+.course-list {
+  flex-grow: 1;
+  overflow-x: auto;
+  padding-bottom: 20px;
+}
+
+.course-row {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.course-col {
+  flex: 0 0 250px;
+  margin-right: 20px;
+}
+
+.course-card {
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease;
+  height: 100%; 
+  display: flex;
+  flex-direction: column; 
+}
+
+/* Keep existing styles, but ensure button is at the bottom */
+.add-button {
+  margin-top: auto; 
+}
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15); 
+}
+
+.course-card .card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.course-card .card-subtitle {
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin-bottom: 10px;
+}
+
+.course-card .card-text {
+  margin-bottom: 15px;
+}
+
+.course-card .btn-primary {
+  background-color: #007bff;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 20px;
+}
+
+.course-card .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Skill badges styling */
+.skill-badges {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.skill-badge {
+  background-color: #e0e0e0;
+  color: #555;
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+}
+
+.skill-badge:disabled {
+  background-color: #d3d3d3;
+  color: #999;
+  border: none;
+  cursor: default;
+}
+
+/* See More/Less button */
+.see-more-btn {
+  font-size: 0.9rem;
+  color: #007bff;
+  cursor: pointer;
+  padding: 0;
+  margin-top: 5px;
+  text-decoration: underline;
+}
+
+.see-more-btn:hover {
+  color: #0056b3;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .filter-controls {
+    flex-direction: column;
+  }
+
+  .filter-controls .form-control {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .course-col {
+    flex: 0 0 100%; /* Stack cards vertically on smaller screens */
+  }
+}
+
+.dashboard-container {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.card-text {
+  color: #555;
+}
+
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa; 
+}
+
+/* Learning Bucket Styles */
+.learning-bucket-container {
+  max-width: 1200px; 
+  margin: auto; 
+  padding: 20px;
+}
+
+.learning-course-card {
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease;
+  background: #ffffff;
+}
+
+.learning-course-card:hover {
+  transform: scale(1.02); 
+}
+
+h4 {
+  text-align: center;
+  margin-bottom: 20px; /* Space below the title */
+  color: #333; /* Darker text color */
+}
+
+.alert {
+  margin-bottom: 20px; /* Space below alerts */
+}
+
+button {
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover for buttons */
+}
+
+/* Progress Bar Styles */
+.progress {
+  height: 20px; /* Increase height of progress bar */
+}
+
+.progress-bar {
+  background-color: #007bff; /* Bootstrap primary color */
+}
+
+/* Modal Styles */
+.modal-header {
+  background-color: #f1f1f1; /* Light background for header */
+}
+
+.modal-title {
+  color: #333; /* Dark title color */
+}

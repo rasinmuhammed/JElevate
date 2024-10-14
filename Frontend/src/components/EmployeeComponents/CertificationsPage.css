@@ -1,0 +1,17 @@
+.certification-card {
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
+    transition: transform 0.2s;
+  }
+  
+  .certification-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .certification-image {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    max-height: 150px; 
+    object-fit: cover; 
+  }
+  
